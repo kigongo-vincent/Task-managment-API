@@ -1,7 +1,3 @@
-
-
--- create the users table  
-
 CREATE TABLE IF NOT EXISTS base_user(
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -49,9 +45,3 @@ CREATE TABLE IF NOT EXISTS base_task(
     created_at TIMESTAMP DEFAULT NOW(),
     FOREIGN KEY (author) REFERENCES base_user(id) ON DELETE CASCADE
 );
-
--- create a tes user  
--- INSERT INTO base_user(name, email, role) VALUES ('kigongo vincent', 'kigongovincent81@gmail.com', 'CONSULTANT');
-
---create a sample task
--- INSERT INTO base_task(title, description, duration, author) VALUES ('wrote code', 'took a java course', 45, 1);
