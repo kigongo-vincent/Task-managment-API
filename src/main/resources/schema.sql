@@ -54,4 +54,4 @@ CREATE TABLE IF NOT EXISTS base_task(
 INSERT INTO base_user(name, email, role) VALUES ('kigongo vincent', 'kigongovincent81@gmail.com', 'CONSULTANT');
 
 --create a sample task
-INSERT INTO base_task(title, description, duration, author) VALUES ('wrote code', 'took a java course', 45, 1);
+-- INSERT INTO base_task(title, description, duration, author) VALUES ('wrote code', 'took a java course', 45, 1);
